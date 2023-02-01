@@ -57,22 +57,17 @@
             app:layout_constraintTop_toBottomOf="@id/searchlayout"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:menu="@menu/navigation">
-
-        </com.google.android.material.bottomnavigation.BottomNavigationView>
-
-        <FrameLayout
-            android:id="@+id/fragment_container"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toTopOf="@id/navigation"
-            app:layout_constraintTop_toBottomOf="@+id/navigation">
+            app:menu="@menu/navigation"/>
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewpg"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="90"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                />
 
 
-        </FrameLayout>
+
 
     </LinearLayout>
 

@@ -31,11 +31,6 @@ class passwordlist : Fragment() {
     companion object {
 
         @JvmStatic
-        fun newInstance() =
-            passwordlist().apply {
-                arguments = Bundle().apply {
-
-                }
-            }
+        fun newInstance() = passwordlist()
     }
 }
